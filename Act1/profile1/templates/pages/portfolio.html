@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Eliziah P.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main class="container">
+        <div class="image-section">
+            <img src="{% static 'images/me2.jpg' %}" alt="Profile image">
+        </div>
+
+        <div class="text-section">
+            <h2>Hello there!</h2>
+            <h1>I'm <span class="name">Eliziah,</span><br>a <span class="name2">Web Developer</span></h1>
+            
+            <div class="des">
+                <p>Welcome! I’m glad you stopped by. Here, you’ll discover my projects and the skills I’ve developed as a developer.</p>
+            </div>
+            
+            <a href="{% url 'portfolio:aboutme' %}" class="button">Learn more</a>
+        </div>
+    </main>
+{% endblock %}

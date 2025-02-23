@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<main>
+    <header class="about-header">
+        <div class="header-content">
+            <div class="about-text">
+                <h1>My Projects</h1>
+                <p>Explore my work, and if anything catches your eye, I’d love to hear from you. </p>
+            </div>
+        </div>
+    </header>    
+
+    <div class="container">
+        <div id="projects-container"></div>
+    </div>
+</main>
+
+<script src="{% static 'js/script.js' %}" defer></script>
+
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="about-header">
+    <div class="header-content">
+        <div class="about-image">
+            <img src="{% static 'images/me1.jpg' %}">
+        </div>
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hi, I'm Eliziah Padullon, an aspiring student on a never-ending quest to turn coffee into code. 
+                Currently sharpening my skills and embracing the bugs as part of the journey. 
+                Learning, growing, and building—one line at a time!
+            </p>
+        </div>
+    </div>
+</header>
+
+
+<section class="about-educ">
+    <div class="educ-container">
+            <h2>Education</h2>
+        <div class="educ-line">
+            <div class="timeline-item">
+                <div class="icons" style="color:#8caac4; border: 3px solid #8caac4;"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="educ-content">
+                    <h3>Kalalake Elementary School</h3>
+                    <p>2010 - 2016</p>
+                    <p>CENTEX</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="icons" style="color:#c6cad3; border: 3px solid #c6cad3;"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="educ-content">
+                    <h3>Olongapo National High School</h3>
+                    <p>2016 - 2020</p>
+                    <p>STE Program</p>
+                </div>
+            </div>
+        
+            <div class="timeline-item">
+                <div class="icons" style="color:#dfc5c4; border: 3px solid #dfc5c4;"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="educ-content">
+                    <h3>Tapinac Senior High School</h3>
+                    <p>2020 - 2022</p>
+                    <p>STEM Strand</p>
+                </div>
+            </div>
+        
+            <div class="timeline-item">
+                <div class="icons" style="color:#c28da1; border: 3px solid #c28da1;"><i class="fa-solid fa-computer"></i></div>
+                <div class="educ-content">
+                    <h3>Gordon College</h3>
+                    <p>2022 - ????</p>
+                    <p>BSIT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-skill">
+    <h2>Skills & Experience</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="icon" style="color: #8caac4;"><i class="fa-solid fa-object-group"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Building responsive and interactive web applications with modern frameworks.</p>
+        
+        </div>
+        <div class="card">
+            <div class="icon" style="color: #c28da1;"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Creating visually appealing and user-friendly web interfaces.</p>
+           
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

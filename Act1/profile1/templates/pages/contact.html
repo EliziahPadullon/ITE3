@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+    <div class="contact-info">
+        <h3>Contact Me</h3>
+        <h1><span style="color: #738fbd;">Your Next Big Project</span> starts with a simple hello!</h1>
+        <p>Feel free to connect with me through my social media profiles below.</p>
+
+        <div class="info-item">
+            <a href="https://www.facebook.com/eliziah.padullon" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Eliziah Padullon</span>
+            </a>
+        </div>
+
+        <div class="info-item">
+            <a href="mailto:eliziahpadullon7@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                <span>eliziahpadullon7@gmail.com</span>
+            </a>
+        </div>
+
+        <div class="info-item">
+            <a href="https://github.com/EliziahPadullon">
+                <i class="fa-brands fa-github"></i>
+                <span>Eliziah Padullon</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="example@gmail.com" required>
+            <input type="text" placeholder="09** *** ****" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
