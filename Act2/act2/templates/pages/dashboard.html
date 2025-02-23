@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h2>Dashboard</h2>
+    <p>This is the dashboard page.</p>
+    
+
+    <div class="dashboard-cards">
+        {% for item in data %}
+            <div class="card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.count|currency_format }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

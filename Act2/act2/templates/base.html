@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block extra_css %}{% endblock %}
+
+</head>
+<body>
+    <div class="header">
+        <h1>KZone</h1>
+    </div>
+    
+    <div class="sidebar">
+        <ul>
+            <li><a href="{% url 'dashboard:index' %}">Home</a></li>
+            <li><a href="{% url 'dashboard:reports' %}">Reports</a></li>
+            <li><a href="{% url 'dashboard:settings' %}">Settings</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
